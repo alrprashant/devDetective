@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDetective</title>
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+
+
+
+
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="bg-slate-100" >
+    <div class="wrapper   max-w-[600px] mx-auto mt-16 p-3  bg-slate-100      rounded-lg 
+         ">
+        <div class="topbox flex justify-between"> 
+            <div>            <h1 class="text-red-600 text-3xl">DevDetective</h1>
+            </div>
+            <div class="modeBtn cursor-pointer flex gap-6 ">
+               <p class="mode cursor-pointer ">DARK</p>
+               <div class="icon-container"><img id="mode-icon" src="./assets/images/moon-icon.svg" alt=""></div>
+
+            </div>
+            
+        </div>
+
+        <div class="serachbox flex relative  ">
+            <input type="text" class="block bg-white w-full border  rounded-lg px-2 py-2 mt-4" placeholder="user-name"  data-searchInput>
+            <div class="error absolute top-6 right-20 ">
+                <p id="no-results" class="opacity-0">no search results</p>
+            </div>
+            <button class="absolute right-5  top-5 bg-blue-600 rounded-lg p-1" data-searchBtn >Search</button>
+
+        </div>
+
+        <div class="infobox w-full bg-slate-200 border  rounded-lg  p-5 mt-10  px-10 opacity-0 ">
+            <div class="dp w-full flex gap-6 ">
+                <img src=""   class="icon w-[70px] rounded-[90px]" alt="">
+                <div class="flex justify-between flex-wrap">
+                    <div >
+                      <div><p class="name" ></p></div>
+                      <a href="" class="user-name " ></a>
+                      
+                    </div>
+                    <div><p class="joiningdate"></p></div>
+                  
+                </div> 
+
+
+            </div>
+            <div class="userdata  ms-24">
+               
+                <div class="text-blue-400 w-[70%]  ">
+                    <p class="bio"></p>
+
+                </div>
+                <div class="staticdata w-[85%] flex justify-between
+                p-4 bg-slate-400 rounded-lg mt-4 flex-wrap">
+                    <p class="flex flex-col gap-4">
+                        Repos 
+                        <span class="repos">
+
+                        </span>
+                    </p>
+                    <p class="flex flex-col gap-4">
+                        Followers 
+                        <span class="followers">
+                            
+                        </span>
+                    </p>
+                    <p class="flex flex-col gap-4">
+                        Following 
+                        <span class="following">
+                            
+                        </span>
+                    </p>
+
+                </div>
+                <div class="contact flex flex-wrap gap-6 gap-x-10 mt-8">
+                    <address class="location"></address>
+                    <a href="" x><p class="biolink"></p></a>
+                    <a href="" > <p class="twitter"></p><i></i></a>
+                    <a href="" ><p class="comapnies"></p><i></i></a>
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+       </div>
+    
+    
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
