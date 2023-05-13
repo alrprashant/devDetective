@@ -68,7 +68,6 @@ async function getGitUser(userName){
 
 
 function showUi(data){
-  if(data.message !=="Not Found"){
     info.classList.remove("opacity-0")
     
 
@@ -80,15 +79,15 @@ function showUi(data){
     profilePic.src=data?.avatar_url;
 
     const name=document.querySelector(".name");
-    name.innerText=data.name === null ? data.login : data.name;
+    name.innerText=data.name;
     // here we r using Ternary Operator in case of data.name is null it will show login value in name.innerText otherwise it will show value of name in name 's innerText
     const joiningDate=document.querySelector(".joiningdate");
     joiningDate.innerText=`Joined${data?.created_at}`;
     const userId=document.querySelector(".user-name");
     userId.innerText=`@${data?.login}`;
-    user.href = `${data.html_url}`;
+    
     const userBio=document.querySelector(".bio");
-    userBio.innerText=data.bio == null ? "This profile has no bio" : `${data.bio}`;
+    userBio.innerText=data?.bio
     const userRepos=document.querySelector(".repos");
     userRepos.innerText=data?.public_repos;
     const userFollowers=document.querySelector(".followers");
@@ -111,10 +110,7 @@ function showUi(data){
 
 
 
-  }
-  else{
-    noResult.classList.remove("opacity-0");
-  }
+  
 }
 
 
